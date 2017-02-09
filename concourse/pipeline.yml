@@ -5,13 +5,17 @@ resources:
    source:
     uri: {{app-url}}
     branch: {{app-branch}}
-    private_key: {{github-private-key}}
+    username: {{git-username}}
+    password: {{git-password}}
+    # private_key: {{github-private-key}}
  - name: version
    type: git
    source:
     uri: {{app-url}}
     branch: version
-    private_key: {{github-private-key}}
+    # private_key: {{github-private-key}}
+    username: {{git-username}}
+    password: {{git-password}}
  - name: tools
    type: git
    source:
